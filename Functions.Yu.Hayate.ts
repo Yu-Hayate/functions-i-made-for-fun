@@ -117,7 +117,7 @@ namespace stuff {
         return hexToRGB(col)
     }
     //% block="Get $color of $RGB"
-    export function getR_G_BOf(RGB: [number, number, number], color: RGB) {
+    export function getR_G_BOf(RGB: number[], color: RGB) {
         return RGB[color]
     }
     //% block="get $Type hexadecimal value of $col"

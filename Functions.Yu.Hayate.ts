@@ -63,7 +63,7 @@ function findClosestColor(col: string): number {
         } else {
             reason = "too small"
         }
-        throw ("This isn't a hexedecimal color the input is " + reason + " to be a hexedecimal color")
+        throw ("This isn't a hexadecimal color, the input is " + reason + " to be a hexadecimal color")
     }
     
     let colList = makeCodeColors
@@ -96,17 +96,22 @@ namespace stuff {
     export function GetClosestColor(col: string) {
         return findClosestColor(col)
     }
-    //% block="Get hexedecimal color of $col"
+    //% block="Get hexadecimal color of $col"
     //% groupe="Colors"
     //% col.shadow="colorindexpicker"
     export function GetHexOfColor(col: number) {
         if (col <=0) {
-            throw("transparent color doesn't have a hexedecimal value")
+            throw("transparent color doesn't have a hexadecimal value")
         }
         return makeCodeColors[col-1]
     }
-
-    //% block="get $Type hexedecimal value of $col"
+    //% block="Get RGB of $col"
+    //% col.defl="#1C4F1B"
+    //% group="Colors"
+    export function GetRGBof(col: string) {
+        return hexToRGB(col)
+    }
+    //% block="get $Type hexadecimal value of $col"
     //% col.defl="#1C4F1B"
     //% group="Colors"
     export function TransformColor(col: string, Type: Colortype) {

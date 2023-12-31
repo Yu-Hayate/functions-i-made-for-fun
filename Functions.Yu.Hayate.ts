@@ -118,7 +118,15 @@ namespace stuff {
     }
     //% block="Get $color of $RGB"
     export function getR_G_BOf(RGB: number[], color: RGB) {
+
         return RGB[color]
+    }
+    //% block="from RGB to hex $RGB"
+    export function ToHexColor(RGB: number[]) {
+        const r = RGB[0]
+        const g = RGB[1]
+        const b = RGB[2]
+        return "#" + toHex(r, 2) + toHex(g, 2) + toHex(b, 2)
     }
     //% block="get $Type hexadecimal value of $col"
     //% col.defl="#1C4F1B"

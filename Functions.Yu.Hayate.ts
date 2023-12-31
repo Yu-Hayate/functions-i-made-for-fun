@@ -5,6 +5,11 @@ function hexToRGB(hex: string): number[] {
     let b = parseInt(hex.slice(5, 7), 16);
     return [r, g, b];
 }
+enum RGB {
+    R = 0,
+    G = 1,
+    B = 2
+}
 let ColorList: string[] = []
 let NewColorList: string[] = []
 enum Colorpalette {
@@ -110,6 +115,10 @@ namespace stuff {
     //% group="Colors"
     export function GetRGBof(col: string) {
         return hexToRGB(col)
+    }
+    //% block=""
+    export function getR_G_BOf(RGB: [number, number, number], color: RGB) {
+        return RGB[color]
     }
     //% block="get $Type hexadecimal value of $col"
     //% col.defl="#1C4F1B"

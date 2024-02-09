@@ -61,7 +61,7 @@ let reason = ""
 function findClosestColor(col: string): number {
     if (col.charAt(0) != "#") {
         col = "#" + col
-    }
+    }  
     if (col.length < 7 || col.length > 7) {
         if (col.length > 7) {
             reason = "too big"
@@ -93,7 +93,7 @@ enum Colortype {
     Inverted
 }
 
-//% Groupes='[Colors, notcolors]'
+//% Groupes='[Colors, Sprites]'
 namespace stuff {
     //% block="Get closest color to $col"
     //% group="Colors"
@@ -203,6 +203,19 @@ namespace stuff {
                 const makeCodeColors = Colors.GrayScale
             }
         }
+    }
+    //% block="switch sprites $SpriteA with $SpriteB"
+    //% group="Sprites"
+    //% SpriteA.defl=sprite
+    //% SpriteA.shadow=variables_get
+    //% SpriteB.defl=enemy
+    //% SpriteB.shadow=variables_get
+    export function SwitchSprites(SpriteA: Sprite, SpriteB: Sprite) {
+        const _PosA = [SpriteA.x, SpriteA.y]
+        const _PosB = [SpriteB.x, SpriteB.y]
+        SpriteA.setPosition(_PosB[0],_PosB[1])
+        SpriteB.setPosition(_PosA[0], _PosA[1])
+        
     }
 }
 

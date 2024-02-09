@@ -25,7 +25,7 @@ Still_life,
 SteamPunk,
 GrayScale
 }
-const Colors: { [key: string]: string[] } = {
+const _Colors: { [key: string]: string[] } = {
         Arcade: stuff.CreateCustomColorArray("1  #FFFFFF 2  #FF2121 3  #FF93C4 4  #FF8135 5  #FFF609 6  #249CA3 7  #78DC52 8  #003FAD 9  #87F2FF 10  #8E2EC4 11  #A4839F 12  #5C406C 13  #E5CDC4 14  #91463D 15  #000000"),
          Matte: stuff.CreateCustomColorArray("1  #FFF1E8 2  #FF004D 3  #FF77A8 4  #FFA300 5  #FFEC27 6  #008751 7  #00E436 8  #29ADFF 9  #C2C3C7 10  #7E2553 11  #83769C 12  #5F574F 13  #FFCCAA 14  #AB5236 15  #1D2B53"),
         Pastel: stuff.CreateCustomColorArray("1  #FFF7E4 2  #F98284 3  #FEAAE4 4  #FFC384 5  #FFF7A0 6  #87A889 7  #B0EB93 8  #B0A9E4 9  #ACCCE4 10  #B3E3DA 11  #D9C8BF 12  #6C5671 13  #FFE6C6 14  #DEA38B 15  #28282E"),
@@ -170,37 +170,37 @@ namespace stuff {
     export function SetColorpalette(ColorArray: Colorpalette) {
         switch (ColorArray) {
             case Colorpalette.Arcade: {
-                const makeCodeColors = Colors.Arcade
+                const makeCodeColors = _Colors.Arcade
             }
             case Colorpalette.Matte: {
-                const makeCodeColors = Colors.Matte
+                const makeCodeColors = _Colors.Matte
             }
             case Colorpalette.Pastel : {
-                const makeCodeColors = Colors.Pastel
+                const makeCodeColors = _Colors.Pastel
             }
             case Colorpalette.Sweet : {
-                const makeCodeColors = Colors.Sweet
+                const makeCodeColors = _Colors.Sweet
             }
             case Colorpalette.Poke : {
-                const makeCodeColors = Colors.Poke
+                const makeCodeColors = _Colors.Poke
             }
             case Colorpalette.Adventure : {
-                const makeCodeColors = Colors.Adventure
+                const makeCodeColors = _Colors.Adventure
             }
             case Colorpalette.DIY : {
-                const makeCodeColors = Colors.DIY
+                const makeCodeColors = _Colors.DIY
             }
             case Colorpalette.Adafruit : {
-                const makeCodeColors = Colors.Adafruit
+                const makeCodeColors = _Colors.Adafruit
             }
             case Colorpalette.Still_life : {
-                const makeCodeColors = Colors.Still_life
+                const makeCodeColors = _Colors.Still_life
             }
             case Colorpalette.SteamPunk : {
-                const makeCodeColors = Colors.SteamPunk
+                const makeCodeColors = _Colors.SteamPunk
             }
             case Colorpalette.GrayScale : {
-                const makeCodeColors = Colors.GrayScale
+                const makeCodeColors = _Colors.GrayScale
             }
         }
     }

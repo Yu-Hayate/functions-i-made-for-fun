@@ -175,42 +175,31 @@ namespace stuff {
     }
     //% block="set the Color palette to $ColorArray"
     export function SetColorpalette(ColorArray: Colorpalette) {
-        switch (ColorArray) {
-            case Colorpalette.Arcade: {
-                makeCodeColors = _Colors.Arcade
-            }
-            case Colorpalette.Matte: {
-                makeCodeColors = _Colors.Matte
-            }
-            case Colorpalette.Pastel : {
-                makeCodeColors = _Colors.Pastel
-            }
-            case Colorpalette.Sweet : {
-                makeCodeColors = _Colors.Sweet
-            }
-            case Colorpalette.Poke : {
-                makeCodeColors = _Colors.Poke
-            }
-            case Colorpalette.Adventure : {
-                makeCodeColors = _Colors.Adventure
-            }
-            case Colorpalette.DIY : {
-                makeCodeColors = _Colors.DIY
-            }
-            case Colorpalette.Adafruit : {
-                makeCodeColors = _Colors.Adafruit
-            }
-            case Colorpalette.Still_life : {
-                makeCodeColors = _Colors.Still_life
-            }
-            case Colorpalette.SteamPunk : {
-                makeCodeColors = _Colors.SteamPunk
-            }
-            case Colorpalette.GrayScale : {
-                makeCodeColors = _Colors.GrayScale
-            }
+        if (ColorArray === Colorpalette.Arcade) {
+            makeCodeColors = _Colors.Arcade;
+        } else if (ColorArray === Colorpalette.Matte) {
+            makeCodeColors = _Colors.Matte;
+        } else if (ColorArray === Colorpalette.Pastel) {
+            makeCodeColors = _Colors.Pastel;
+        } else if (ColorArray === Colorpalette.Sweet) {
+            makeCodeColors = _Colors.Sweet;
+        } else if (ColorArray === Colorpalette.Poke) {
+            makeCodeColors = _Colors.Poke;
+        } else if (ColorArray === Colorpalette.Adventure) {
+            makeCodeColors = _Colors.Adventure;
+        } else if (ColorArray === Colorpalette.DIY) {
+            makeCodeColors = _Colors.DIY;
+        } else if (ColorArray === Colorpalette.Adafruit) {
+            makeCodeColors = _Colors.Adafruit;
+        } else if (ColorArray === Colorpalette.Still_life) {
+            makeCodeColors = _Colors.Still_life;
+        } else if (ColorArray === Colorpalette.SteamPunk) {
+            makeCodeColors = _Colors.SteamPunk;
+        } else if (ColorArray === Colorpalette.GrayScale) {
+            makeCodeColors = _Colors.GrayScale;
         }
     }
+
     //% block="switch sprites $SpriteA with $SpriteB"
     //% group="Sprites"
     //% SpriteA.defl=sprite

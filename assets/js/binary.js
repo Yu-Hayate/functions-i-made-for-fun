@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.47/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"1.4.2","target":"arcade","targetVersion":"1.12.47","repo":"yu-hayate/functions-i-made-for-fun"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.47/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"1.4.3","target":"arcade","targetVersion":"1.12.47","repo":"yu-hayate/functions-i-made-for-fun"}
 // total=1250239 new=6.42% cached=87.94% other=5.63%
 (function (ectx) {
 'use strict';
@@ -429,7 +429,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P19586(s) {
+function _main___P20420(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -828,100 +828,100 @@ switch (step) {
   case 36:
     r0 = s.retval;
     r0 = pxsim_Array__mk();
-    globals.ColorList___18914 = (r0);
+    globals.ColorList___19743 = (r0);
     r0 = pxsim_Array__mk();
-    globals.NewColorList___18916 = (r0);
+    globals.NewColorList___19745 = (r0);
     r0 = pxsim_pxtrt.mkMap();
     s.tmp_0 = r0;
-    s.tmp_2 = stuff_CreateCustomColorArray__P18921_mk(s);
+    s.tmp_2 = stuff_CreateCustomColorArray__P19750_mk(s);
     s.tmp_2.arg0 = "1  #FFFFFF 2  #FF2121 3  #FF93C4 4  #FF8135 5  #FFF609 6  #249CA3 7  #78DC52 8  #003FAD 9  #87F2FF 10  #8E2EC4 11  #A4839F 12  #5C406C 13  #E5CDC4 14  #91463D 15  #000000";
     s.callLocIdx = 63; s.pc = 37; return s.tmp_2;
   case 37:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_pxtrt.mapSetByString(s.tmp_0, "Arcade", s.tmp_1);
-    s.tmp_4 = stuff_CreateCustomColorArray__P18921_mk(s);
+    s.tmp_4 = stuff_CreateCustomColorArray__P19750_mk(s);
     s.tmp_4.arg0 = "1  #FFF1E8 2  #FF004D 3  #FF77A8 4  #FFA300 5  #FFEC27 6  #008751 7  #00E436 8  #29ADFF 9  #C2C3C7 10  #7E2553 11  #83769C 12  #5F574F 13  #FFCCAA 14  #AB5236 15  #1D2B53";
     s.callLocIdx = 64; s.pc = 38; return s.tmp_4;
   case 38:
     r0 = s.retval;
     s.tmp_3 = r0;
     r0 = pxsim_pxtrt.mapSetByString(s.tmp_0, "Matte", s.tmp_3);
-    s.tmp_6 = stuff_CreateCustomColorArray__P18921_mk(s);
+    s.tmp_6 = stuff_CreateCustomColorArray__P19750_mk(s);
     s.tmp_6.arg0 = "1  #FFF7E4 2  #F98284 3  #FEAAE4 4  #FFC384 5  #FFF7A0 6  #87A889 7  #B0EB93 8  #B0A9E4 9  #ACCCE4 10  #B3E3DA 11  #D9C8BF 12  #6C5671 13  #FFE6C6 14  #DEA38B 15  #28282E";
     s.callLocIdx = 65; s.pc = 39; return s.tmp_6;
   case 39:
     r0 = s.retval;
     s.tmp_5 = r0;
     r0 = pxsim_pxtrt.mapSetByString(s.tmp_0, "Pastel", s.tmp_5);
-    s.tmp_8 = stuff_CreateCustomColorArray__P18921_mk(s);
+    s.tmp_8 = stuff_CreateCustomColorArray__P19750_mk(s);
     s.tmp_8.arg0 = "1  #F4F4F4 2  #B13E53 3  #A7F070 4  #EF7D57 5  #FFCD75 6  #257179 7  #38B764 8  #29366F 9  #3B5DC9 10  #41A6F6 11  #566C86 12  #333C57 13  #94B0C2 14  #5D275D 15  #1A1C2C";
     s.callLocIdx = 66; s.pc = 40; return s.tmp_8;
   case 40:
     r0 = s.retval;
     s.tmp_7 = r0;
     r0 = pxsim_pxtrt.mapSetByString(s.tmp_0, "Sweet", s.tmp_7);
-    s.tmp_10 = stuff_CreateCustomColorArray__P18921_mk(s);
+    s.tmp_10 = stuff_CreateCustomColorArray__P19750_mk(s);
     s.tmp_10.arg0 = "1  #FFFFFF 2  #D45362 3  #E8958B 4  #CC8945 5  #F5DC8C 6  #417D53 7  #5DD48F 8  #5162C2 9  #6CADEB 10  #B56EDD 11  #8F3F29 12  #612431 13  #C0FAC2 14  #24325E 15  #1B1221";
     s.callLocIdx = 67; s.pc = 41; return s.tmp_10;
   case 41:
     r0 = s.retval;
     s.tmp_9 = r0;
     r0 = pxsim_pxtrt.mapSetByString(s.tmp_0, "Poke", s.tmp_9);
-    s.tmp_12 = stuff_CreateCustomColorArray__P18921_mk(s);
+    s.tmp_12 = stuff_CreateCustomColorArray__P19750_mk(s);
     s.tmp_12.arg0 = "1  #F5EDBA 2  #9D303B 3  #D26471 4  #E4943A 5  #C0C741 6  #647D34 7  #34859D 8  #17434B 9  #7EC4C1 10  #584563 11  #8C8FAE 12  #3E2137 13  #D79B7D 14  #9A6348 15  #1F0E1C";
     s.callLocIdx = 68; s.pc = 42; return s.tmp_12;
   case 42:
     r0 = s.retval;
     s.tmp_11 = r0;
     r0 = pxsim_pxtrt.mapSetByString(s.tmp_0, "Adventure", s.tmp_11);
-    s.tmp_14 = stuff_CreateCustomColorArray__P18921_mk(s);
+    s.tmp_14 = stuff_CreateCustomColorArray__P19750_mk(s);
     s.tmp_14.arg0 = "1  #F8F8F8 2  #F80000 3  #FF93C4 4  #F8A830 5  #F8F858 6  #089050 7  #70D038 8  #2868C0 9  #10C0C8 10  #C868E8 11  #C0C0C0 12  #787878 13  #F8D898 14  #C04800 15  #000000";
     s.callLocIdx = 69; s.pc = 43; return s.tmp_14;
   case 43:
     r0 = s.retval;
     s.tmp_13 = r0;
     r0 = pxsim_pxtrt.mapSetByString(s.tmp_0, "DIY", s.tmp_13);
-    s.tmp_16 = stuff_CreateCustomColorArray__P18921_mk(s);
+    s.tmp_16 = stuff_CreateCustomColorArray__P19750_mk(s);
     s.tmp_16.arg0 = "1  #FFFFFF 2  #FF0000 3  #FF007D 4  #FF7A00 5  #E5FF00 6  #2D9F00 7  #00FF72 8  #0034FF 9  #17ABFF 10  #C600FF 11  #636363 12  #7400DB 13  #00EFFF 14  #DF2929 15  #000000";
     s.callLocIdx = 70; s.pc = 44; return s.tmp_16;
   case 44:
     r0 = s.retval;
     s.tmp_15 = r0;
     r0 = pxsim_pxtrt.mapSetByString(s.tmp_0, "Adafruit", s.tmp_15);
-    s.tmp_18 = stuff_CreateCustomColorArray__P18921_mk(s);
+    s.tmp_18 = stuff_CreateCustomColorArray__P19750_mk(s);
     s.tmp_18.arg0 = "1  #A8E4D4 2  #D13B27 3  #E07F8A 4  #CC8218 5  #B3E868 6  #5D853A 7  #68C127 8  #286FB8 9  #9B8BFF 10  #3F2811 11  #513155 12  #122615 13  #C7B581 14  #7A2222 15  #000000";
     s.callLocIdx = 71; s.pc = 45; return s.tmp_18;
   case 45:
     r0 = s.retval;
     s.tmp_17 = r0;
     r0 = pxsim_pxtrt.mapSetByString(s.tmp_0, "Still_life", s.tmp_17);
-    s.tmp_20 = stuff_CreateCustomColorArray__P18921_mk(s);
+    s.tmp_20 = stuff_CreateCustomColorArray__P19750_mk(s);
     s.tmp_20.arg0 = "1  #C0D1CC 2  #603B3A 3  #170E19 4  #775C4F 5  #77744F 6  #4F7754 7  #A19F7C 8  #4F5277 9  #65738C 10  #3A604A 11  #213B25 12  #433A60 13  #7C94A1 14  #3B2137 15  #2F213B";
     s.callLocIdx = 72; s.pc = 46; return s.tmp_20;
   case 46:
     r0 = s.retval;
     s.tmp_19 = r0;
     r0 = pxsim_pxtrt.mapSetByString(s.tmp_0, "SteamPunk", s.tmp_19);
-    s.tmp_22 = stuff_CreateCustomColorArray__P18921_mk(s);
+    s.tmp_22 = stuff_CreateCustomColorArray__P19750_mk(s);
     s.tmp_22.arg0 = "1  #FFFFFF 2  #EDEDED 3  #DBDBDB 4  #C8C8C8 5  #B6B6B6 6  #A4A4A4 7  #929292 8  #808080 9  #6D6D6D 10  #5B5B5B 11  #494949 12  #373737 13  #242424 14  #121212 15  #000000";
     s.callLocIdx = 73; s.pc = 47; return s.tmp_22;
   case 47:
     r0 = s.retval;
     s.tmp_21 = r0;
     r0 = pxsim_pxtrt.mapSetByString(s.tmp_0, "GrayScale", s.tmp_21);
-    globals._Colors___18919 = (s.tmp_0);
+    globals._Colors___19748 = (s.tmp_0);
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-_main___P19586.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
-_main___P19586.continuations = [  ]
+_main___P20420.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
+_main___P20420.continuations = [  ]
 
-function _main___P19586_mk(s) {
+function _main___P20420_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P19586, depth: s.depth + 1,
+        parent: s, fn: _main___P20420, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -1477,7 +1477,7 @@ function gameOverConfig_inline__P4956_mk(s) {
 
 
 
-function stuff_CreateCustomColorArray__P18921(s) {
+function stuff_CreateCustomColorArray__P19750(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1487,9 +1487,9 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.Hex___19206 = undefined;
-    s.unnamed122___U1 = undefined;
-    s.unnamed123___U2 = undefined;
+    s.Hex___20035 = undefined;
+    s.unnamed146___U1 = undefined;
+    s.unnamed147___U2 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
@@ -1501,21 +1501,21 @@ switch (step) {
     s.callLocIdx = 74; s.pc = 6; return s.tmp_0;
   case 6:
     r0 = s.retval;
-    globals.ColorList___18914 = (r0);
+    globals.ColorList___19743 = (r0);
     r0 = pxsim_Array__mk();
-    globals.NewColorList___18916 = (r0);
-    s.Hex___19206 = (undefined);
-    s.unnamed122___U1 = (globals.ColorList___18914);
-    s.unnamed123___U2 = (0);
+    globals.NewColorList___19745 = (r0);
+    s.Hex___20035 = (undefined);
+    s.unnamed146___U1 = (globals.ColorList___19743);
+    s.unnamed147___U2 = (0);
   case 1:
-    s.tmp_0 = r0 = s.unnamed123___U2;
-    r0 = pxsim_Array__length(s.unnamed122___U1);
+    s.tmp_0 = r0 = s.unnamed147___U2;
+    r0 = pxsim_Array__length(s.unnamed146___U1);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 < s.tmp_1);
     if (!r0) { step = 5; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed122___U1, s.unnamed123___U2);
-    s.Hex___19206 = (r0);
-    r0 = pxsim_String_.includes(s.Hex___19206, "#", undefined);
+    r0 = pxsim_Array__getAt(s.unnamed146___U1, s.unnamed147___U2);
+    s.Hex___20035 = (r0);
+    r0 = pxsim_String_.includes(s.Hex___20035, "#", undefined);
     s.tmp_4 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_4);
     s.tmp_3 = r0;
@@ -1526,32 +1526,32 @@ switch (step) {
     { step = 4; continue; }
   case 2:
   case 3:
-    r0 = pxsim_Array__push(globals.NewColorList___18916, s.Hex___19206);
+    r0 = pxsim_Array__push(globals.NewColorList___19745, s.Hex___20035);
   case 4:
-    r0 = (s.unnamed123___U2 + 1);
-    s.unnamed123___U2 = (r0);
+    r0 = (s.unnamed147___U2 + 1);
+    s.unnamed147___U2 = (r0);
     { step = 1; continue; }
   case 5:
-    s.unnamed122___U1 = (undefined);
-    r0 = globals.NewColorList___18916;
+    s.unnamed146___U1 = (undefined);
+    r0 = globals.NewColorList___19745;
     return leave(s, r0)
   default: oops()
 } } }
-stuff_CreateCustomColorArray__P18921.info = {"start":6710,"length":277,"line":159,"column":4,"endLine":169,"endColumn":1,"fileName":"Functions.Yu.Hayate.ts","functionName":"CreateCustomColorArray","argumentNames":["Colors"]}
+stuff_CreateCustomColorArray__P19750.info = {"start":6710,"length":277,"line":159,"column":4,"endLine":169,"endColumn":1,"fileName":"Functions.Yu.Hayate.ts","functionName":"CreateCustomColorArray","argumentNames":["Colors"]}
 
-function stuff_CreateCustomColorArray__P18921_mk(s) {
+function stuff_CreateCustomColorArray__P19750_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: stuff_CreateCustomColorArray__P18921, depth: s.depth + 1,
+        parent: s, fn: stuff_CreateCustomColorArray__P19750, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
   tmp_2: undefined,
   tmp_3: undefined,
   tmp_4: undefined,
-  Hex___19206: undefined,
-  unnamed122___U1: undefined,
-  unnamed123___U2: undefined,
+  Hex___20035: undefined,
+  unnamed146___U1: undefined,
+  unnamed147___U2: undefined,
   arg0: undefined,
 } }
 
@@ -42509,7 +42509,7 @@ const sprites_BaseSpriteSayRenderer__C2259_VT = mkVTable({
   },
 });
 
-const breakpoints = setupDebugger(1, ["_Colors___18919","ColorList___18914","NewColorList___18916"])
+const breakpoints = setupDebugger(1, ["_Colors___19748","ColorList___19743","NewColorList___19745"])
 
-return _main___P19586
+return _main___P20420
 })

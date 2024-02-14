@@ -87,13 +87,20 @@ function findClosestColor(col: string): number {
 
     return makeCodeColors.indexOf(closestColor) + 1;
 }
-const makeCodeColors = ["#FFFFFF", "#FF2121", "#FF93C4", "#FF8135", "#FFF609", "#249CA3", "#78DC52", "#003FAD", "#87F2FF", "#8E2EC4", "#A4839F", "#5C406C", "#E5CDC4","#91463D", "#000000"]
+let makeCodeColors = ["#FFFFFF", "#FF2121", "#FF93C4", "#FF8135", "#FFF609", "#249CA3", "#78DC52", "#003FAD", "#87F2FF", "#8E2EC4", "#A4839F", "#5C406C", "#E5CDC4","#91463D", "#000000"]
 enum Colortype {
     GrayScale,
     Inverted
 }
-
-//% Groupes='[Colors, Sprites]'
+enum Types {
+    //% block="length"
+    length = 0,
+    //% block="width"
+    width = 1,
+    //% block="height"
+    height = 2
+}
+//% Groupes='[Extras,Colors, Sprites,Drawing]'
 namespace stuff {
     //% block="Get closest color to $col"
     //% group="Colors"
@@ -170,37 +177,37 @@ namespace stuff {
     export function SetColorpalette(ColorArray: Colorpalette) {
         switch (ColorArray) {
             case Colorpalette.Arcade: {
-                const makeCodeColors = _Colors.Arcade
+                makeCodeColors = _Colors.Arcade
             }
             case Colorpalette.Matte: {
-                const makeCodeColors = _Colors.Matte
+                makeCodeColors = _Colors.Matte
             }
             case Colorpalette.Pastel : {
-                const makeCodeColors = _Colors.Pastel
+                makeCodeColors = _Colors.Pastel
             }
             case Colorpalette.Sweet : {
-                const makeCodeColors = _Colors.Sweet
+                makeCodeColors = _Colors.Sweet
             }
             case Colorpalette.Poke : {
-                const makeCodeColors = _Colors.Poke
+                makeCodeColors = _Colors.Poke
             }
             case Colorpalette.Adventure : {
-                const makeCodeColors = _Colors.Adventure
+                makeCodeColors = _Colors.Adventure
             }
             case Colorpalette.DIY : {
-                const makeCodeColors = _Colors.DIY
+                makeCodeColors = _Colors.DIY
             }
             case Colorpalette.Adafruit : {
-                const makeCodeColors = _Colors.Adafruit
+                makeCodeColors = _Colors.Adafruit
             }
             case Colorpalette.Still_life : {
-                const makeCodeColors = _Colors.Still_life
+                makeCodeColors = _Colors.Still_life
             }
             case Colorpalette.SteamPunk : {
-                const makeCodeColors = _Colors.SteamPunk
+                makeCodeColors = _Colors.SteamPunk
             }
             case Colorpalette.GrayScale : {
-                const makeCodeColors = _Colors.GrayScale
+                makeCodeColors = _Colors.GrayScale
             }
         }
     }
@@ -216,6 +223,38 @@ namespace stuff {
         SpriteA.setPosition(_PosB[0],_PosB[1])
         SpriteB.setPosition(_PosA[0], _PosA[1])
         
+    }
+    //% blockId="drawCircle"
+    //% block="draw Circle at x$__X | y$__Y with radius of | $__Rad of color | $color || width $_Width" 
+    //% color.shadow="colorindexpicker"
+    //% inlineInputMode=inline
+    //% group="Drawing"
+    //% __Rad.defl=7
+    //% color.defl=1
+    //% _Width.defl=1
+    function drawCircle(__X: number, __Y: number, __Rad: number, __img: Image, _Width: number, color: number) {
+        for (let _X2 = 0; _X2 <= __img.width - 1; _X2++) {
+            for (let _Y2 = 0; _Y2 <= __img.height - 1; _Y2++) {
+                let dist = Math.sqrt((_X2 - __X) ** 2 + (_Y2 - __Y) ** 2)
+                if (Math.round(dist / _Width) == Math.round(__Rad / _Width)) {
+                    __img.setPixel(_X2, _Y2, color)
+                }
+            }
+        }
+    }
+
+    //% group="Extras"
+    //% block="$input $type"
+    export function getLength(input: any, type: Types) {
+    if (type === Types.length) {
+        return input.length
+    } else if (type === Types.height) {
+        return input.height
+    } else if (type === Types.width) {
+        return input.width
+    } else {
+        return NaN
+    }
     }
 }
 
